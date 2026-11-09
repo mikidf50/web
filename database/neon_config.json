@@ -1,0 +1,56 @@
+{
+  "provider": "Neon Serverless PostgreSQL",
+  "activeDatabase": {
+    "name": "mela_market_v2",
+    "host": "ep-withered-wildflower-bevhq6e4-pooler.c-9.us-east-2.aws.neon.tech",
+    "port": 5432,
+    "user": "neondb_owner",
+    "ssl": true,
+    "sslMode": "require",
+    "channelBinding": "require",
+    "pooler": true,
+    "connectionStringEnv": "DATABASE_URL",
+    "connectionString": "postgresql://neondb_owner:YOUR_PASSWORD@ep-withered-wildflower-bevhq6e4-pooler.c-9.us-east-2.aws.neon.tech/mela_market_v2?sslmode=require&channel_binding=require",
+    "status": "connected_and_verified",
+    "tables": [
+      "users",
+      "categories",
+      "products",
+      "inventory_logs",
+      "orders",
+      "order_items",
+      "payments",
+      "inquiries",
+      "reports",
+      "admin_audit_logs"
+    ]
+  },
+  "preservedDatabase": {
+    "name": "neondb",
+    "host": "ep-withered-wildflower-bevhq6e4-pooler.c-9.us-east-2.aws.neon.tech",
+    "port": 5432,
+    "user": "neondb_owner",
+    "ssl": true,
+    "connectionStringEnv": "PREVIOUS_DATABASE_URL",
+    "connectionString": "postgresql://neondb_owner:YOUR_PASSWORD@ep-withered-wildflower-bevhq6e4-pooler.c-9.us-east-2.aws.neon.tech/neondb?sslmode=require&channel_binding=require",
+    "status": "preserved_untouched"
+  },
+  "roles": [
+    "admin",
+    "seller",
+    "customer"
+  ],
+  "adminAccounts": [
+    {
+      "email": "mikiaelebrhane21@gmail.com",
+      "role": "admin",
+      "status": "active_and_verified"
+    },
+    {
+      "email": "mikiaelebrhane@gmail.com",
+      "role": "admin",
+      "status": "active_and_verified"
+    }
+  ],
+  "lastMigration": "2026-11-08T11:38:19.000Z"
+}
